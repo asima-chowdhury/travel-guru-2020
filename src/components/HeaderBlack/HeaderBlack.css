@@ -1,0 +1,11 @@
+.header .logo{
+    height: 50px;
+}
+.customNavBar .nav-link {
+    padding-right: 2.5rem!important;
+    font-weight:600!important;
+    color: #000!important;
+}
+.customButton{
+    width: 130px;
+}
