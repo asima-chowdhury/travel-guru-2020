@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../images/logoBlack.png';
-import './HeaderBlack.css'
+import './HeaderBlack.css';
+import { UserContext } from '../../App';
 
 const HeaderBlack = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <Container className="header border-bottom">
             <Navbar sticky="true" bg="light" variant="light" className="customNavBar">
@@ -16,8 +18,12 @@ const HeaderBlack = () => {
                     <Nav.Link href="#">Destination</Nav.Link>
                     <Nav.Link href="#">Blog</Nav.Link>
                     <Nav.Link href="#">Contact</Nav.Link>
+                    <Nav.Link href="#">{loggedInUser.displayName}</Nav.Link>
                     <Link to={`/login`}>
-                        <Button variant="warning" className="customButton">Login</Button>
+                        {
+                            loggedInUser.email ? <Button className="customButton" onClick={() => setLoggedInUser({})}>Log Out</Button>
+                                : <Button className="customButton" >Login</Button>
+                        }
                     </Link>
                 </Nav>
             </Navbar>

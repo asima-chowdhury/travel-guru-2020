@@ -25,7 +25,7 @@ const Home = () => {
                     <div className="d-flex justify-content-center align-items-center px-1">
                         <div className="col-md-4 slide-info text-white">
                             <h1>{content.placeName}</h1>
-                            <p>{content.description}</p>
+                            <p>{content.smallDescription}</p>
                             <Link to={`/bookingPage/${content.id}`}>
                                 <Button variant="warning" className="customButton">Booking <FontAwesomeIcon icon={faArrowRight} /></Button>
                             </Link>

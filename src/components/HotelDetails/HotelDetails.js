@@ -4,7 +4,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import './HotelDetails.css';
 
 const HotelDetails = (props) => {
-    console.log(props.hotelDetails)
+    // console.log(props.hotelDetails)
     const { hotelId, img, description, facilities, hotelName, price, ratings } = props.hotelDetails;
     
     return (

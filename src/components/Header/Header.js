@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Col, Container, Form, InputGroup, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../images/logoWhite.png';
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 
 const Header = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <Container className="header">
             <Navbar sticky="true" bg="***" variant="dark" className="customNavbar">
@@ -33,8 +35,12 @@ const Header = () => {
                     <Nav.Link href="#">Destination</Nav.Link>
                     <Nav.Link href="#">Blog</Nav.Link>
                     <Nav.Link href="#">Contact</Nav.Link>
+                    <Nav.Link href="#">{loggedInUser.displayName}</Nav.Link>
                     <Link to={`/login`}>
-                        <Button variant="warning" className="customButton">Login</Button>
+                        {
+                            loggedInUser.email ? <Button className="customButton" onClick={() => setLoggedInUser({})}>Log Out</Button>
+                                : <Button className="customButton" >Login</Button>
+                        }
                     </Link>
                 </Nav>
             </Navbar>

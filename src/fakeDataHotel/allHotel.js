@@ -18,8 +18,8 @@ var allHotel =
       "hotelName": "Apartment in Lost Panorama",
        "description": "4 guests || 2 bedrooms || 2 beds || 2 baths",	  
       "facilities": "WiFi Air Conditioning Kitchen , Cancellation flexibility available.",
-      "ratings": "4.9 (20)",
-      "price": "34",
+      "ratings": "4.8 (10)",
+      "price": "52",
       "img": "https://i.imgur.com/Wi4qWZv.png"
     },
     {
@@ -29,8 +29,8 @@ var allHotel =
       "hotelName": "AR Lounge & Pool (r&r + b&b)",
       "description": "4 guests || 2 bedrooms || 2 beds || 2 baths",	  
       "facilities": "WiFi Air Conditioning Kitchen , Cancellation flexibility available.",
-      "ratings": "4.9 (20)",
-      "price": "34",
+      "ratings": "4.9 (25)",
+      "price": "44",
       "img": "https://i.imgur.com/eDjosQ5.png"
     },
     {
@@ -51,8 +51,8 @@ var allHotel =
       "hotelName": "Grand Sultan Tea Resort & Golf",
        "description": "4 guests || 2 bedrooms || 2 beds || 2 baths",	  
       "facilities": "WiFi Air Conditioning Kitchen , Cancellation flexibility available.",
-      "ratings": "4.9 (20)",
-      "price": "34",
+      "ratings": "4.8 (10)",
+      "price": "52",
       "img": "https://i.imgur.com/Wi4qWZv.png"
     },
     {
@@ -62,8 +62,8 @@ var allHotel =
       "hotelName": "Hotel- Green Leaf Guest House Sreemangal",
       "description": "4 guests || 2 bedrooms || 2 beds || 2 baths",	  
       "facilities": "WiFi Air Conditioning Kitchen , Cancellation flexibility available.",
-      "ratings": "4.9 (20)",
-      "price": "34",
+      "ratings": "4.9 (25)",
+      "price": "44",
       "img": "https://i.imgur.com/eDjosQ5.png"
     },
     {
@@ -84,8 +84,8 @@ var allHotel =
       "hotelName": "Hotel Royal International",
        "description": "4 guests || 2 bedrooms || 2 beds || 2 baths",	  
       "facilities": "WiFi Air Conditioning Kitchen , Cancellation flexibility available.",
-      "ratings": "4.9 (20)",
-      "price": "34",
+      "ratings": "4.8 (10)",
+      "price": "52",
       "img": "https://i.imgur.com/Wi4qWZv.png"
     },
     {
@@ -95,8 +95,8 @@ var allHotel =
       "hotelName": "Tiger Garden International Hotel",
       "description": "4 guests || 2 bedrooms || 2 beds || 2 baths",	  
       "facilities": "WiFi Air Conditioning Kitchen , Cancellation flexibility available.",
-      "ratings": "4.9 (20)",
-      "price": "34",
+      "ratings": "4.9 (25)",
+      "price": "44",
       "img": "https://i.imgur.com/eDjosQ5.png"
     }
   ];
